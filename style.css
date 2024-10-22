@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 0.5fr 3fr;
+}
+
+.title{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+    h1 {   
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        font-size: 90px;    
+        text-shadow: 2px 5px 5px white;
+    }
+
+.musical-note{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.piano-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.piano-keys {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.piano-key {
+    width: 5rem;
+    cursor: pointer;
+    position: relative;
+    height: 20rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.white-key {
+    background-color: #fff;
+    color: #fff;
+}
+
+.black-key {
+    width: 2rem;
+    height: 13rem;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #000;
+    z-index: 2;
+    margin: 0 -20px 0 -20px;
+}
+
+.active-key {
+    background-color: orange;
+    color: orange;
+}
+
+#pressed-key {
+    font-size: 40px;
+    text-shadow: 1px 2px 2px white;
+    margin-bottom: 0;
+}
+
